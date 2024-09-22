@@ -63,7 +63,7 @@ const secondCounterButtonEl = document.querySelector(".second-button");
 
 firstCounterButtonEl.addEventListener("click", (e) => {
   counterValue += 1;
-  counterValueEl.textContent = counterValue; 
+  counterValueEl.textContent = counterValue;
 });
 
 secondCounterButtonEl.addEventListener("click", (e) => {
@@ -72,3 +72,12 @@ secondCounterButtonEl.addEventListener("click", (e) => {
 });
 
 console.log(counterValue);
+
+// last
+
+const fontSizeControlEl = document.querySelector(".font-size-control");
+const textSizeControlEl = document.querySelector(".text");
+
+fontSizeControlEl.addEventListener("input", (e) => {
+  textSizeControlEl.style.fontSize = e.target.value + 'px';
+});
